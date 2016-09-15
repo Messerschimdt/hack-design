@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
 
 
 
@@ -7,6 +8,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#bg-video{
+  position:absolute;top:0;left:0;overflow:hidden;z-index:-998;
+}
+
 
 
 .videojs-background-wrap {
@@ -28,7 +34,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .header{
   font-family: 'Permanent Marker', cursive;
   font-size: 97px;
@@ -38,6 +43,7 @@ body {
   color:#fff;
   height:auto;
   width: 100%;
+
 }
 
 
@@ -46,6 +52,8 @@ body {
   font-family: sans-serif;
   font-size: 30px;
   margin-left: 20px;
+  font-family: 'Noto',sans-serif;;
+
 }
 
 
@@ -55,9 +63,8 @@ body {
 }
 
 .tile-section{
-margin-top:200px;
-margin-bottom: 300px;
-
+padding-top:100px;
+padding-bottom: 25px;
 }
 
 .link-section{
@@ -84,7 +91,7 @@ body{
     align-items: center;
   height:50vh;
   flex-wrap:wrap;
-  width:1100px;
+  width:1080px;
       -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
@@ -98,6 +105,8 @@ body{
   padding:20px;
   color:#222;
   font-size:42px;
+  font-family: 'Noto',sans-serif;;
+
 }
 
 .flip-container {
@@ -111,20 +120,19 @@ body{
 	}
 
 .flip-container, .front, .back {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
+
 }
 
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -137,8 +145,11 @@ body{
   display:flex;
   align-items:center;
     justify-content:center;
-  font-size:30px;
+  font-size:36px;
+  font-family: 'Noto',sans-serif;;
   font-family:sans-serif;
+  color:#fff;
+  text-rendering: optimizeLegibility;
 
 }
 
@@ -152,8 +163,13 @@ body{
 }
 
 .back-content{
- margin:30px;
+ margin:40px;
   font-size:24px;
+  font-family: 'Noto',sans-serif;;
+
+  color:#fff;
+  text-rendering: optimizeLegibility;
+
 }
 
 .center{
@@ -164,4 +180,45 @@ body{
 .front-title{
   align-items:center;
   margin:100px;
+}
+
+.wrap{
+  background: no-repeat center url("../HZCASACP3N.jpg");
+  background-size: cover;
+width:100vw;
+height:100vh;
+
+
+}
+
+.title-wrap{
+
+  padding-top: 125px;
+  display:flex;
+  justify-content:center;
+  font-family: 'Noto',sans-serif;;
+
+  align-items:center;
+  font-size:48px;
+  color:#fff;
+  font-weight: bold;
+
+};
+.title {
+  width:100%;
+  color:#fff;
+
+}
+@media only screen and (max-width:1280px) {
+  .title-wrap{
+padding-top: 50px;
+}
+.tile-section{
+  padding-top: 50px;
+}
+
+@media only screen and (max-width:801px){
+  #bg-video{
+display: none;
+}
 }

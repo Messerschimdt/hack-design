@@ -17,7 +17,6 @@
 -->
     <link rel="stylesheet" href="css/app.css">
     <style>
-
     </style>
 </head>
 
@@ -31,7 +30,7 @@
             <div class="subtitle">Where design and code make inspiring creations.</div>
         </div>
     </div>
-    <video id="bg-video" class="video-js vjs-default-skin" style="position:absolute;top:0;left:0;overflow:hidden;z-index:-998;" height="100%" width="100%" poster="http://video-js.zencoder.com/oceans-clip.png" loop="true">
+    <video id="bg-video" class="video-js vjs-default-skin"  height="100%" width="100%"  loop="true">
         <p>
             Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
         </p>
@@ -40,9 +39,13 @@
 
 
 
-
+<div class="wrap">
+  <div class="title-wrap">
+    <div class="title">Project List</div>
+  </div>
     <div class="container tile-section ">
         <div class="flexwrapper">
+
 
             <div class="flip-container">
                 <div class="flipper">
@@ -50,23 +53,32 @@
                         <div class="front-title"> HTML Email
                         </div>
                     </div>
+                    <a href="http://messerschimdt.github.io/html-email-mockup/">
+
                     <div class="back">
                         <div class="back-content">
-                            Email mockup using <code>&lt;Table&gt;</code> elements. <a href="http://messerschimdt.github.io/html-email-mockup/">Link</a>
+                            Email mockup using <code>&lt;Table&gt;</code> elements.
                         </div>
                     </div>
+                  </a>
+
                 </div>
             </div>
 
             <div class="flip-container">
                 <div class="flipper">
                     <div class="front"> EXTSI </div>
+                    <a href="http://www.extsi.com">
                     <div class="back">
-                        <div class="back-content">Website redesign from Wordpress to a responsive website. <a href="http://www.extsi.com">Link</a>
+                        <div class="back-content">Website redesign from Wordpress to a responsive website.
                         </div>
                     </div>
+                  </a>
+
                 </div>
             </div>
+
+
 
 
             <div class="flip-container">
@@ -76,14 +88,18 @@
                             <div class='center'>Random Quote Generator</div>
                         </div>
                     </div>
+                      <a href="http://messerschimdt.github.io/random_quote_generator">
                     <div class="back">
-                        <div class="back-content">
-                            Random quote generator that uses AJAX to call an API to provide random quotes. <a href="http://messerschimdt.github.io/random_quote_generator"> Link</a>
 
+                        <div class="back-content">
+                            Random quote generator that uses AJAX to call an API to provide random quotes.
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
+
+
 
 
             <div class="flip-container">
@@ -94,35 +110,43 @@
 
 
                     </div>
+                    <a href="http://messerschimdt.github.io/cpi">
                     <div class="back">
-                        <div class="back-content"> Consumer price index graph built with the D3 Library. <a href="http://messerschimdt.github.io/cpi">Link</a>
+                        <div class="back-content"> Consumer price index graph built with the D3 Library. Link
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
+
 
 
             <div class="flip-container">
                 <div class="flipper">
                     <div class="front"> ChartJS
                     </div>
-
+<a href="http://messerschimdt.github.io/chartjs/">
                     <div class="back">
                         <div class="back-content">
-                            An exploration of ChartJs, showing a chart of average income of the bottom 90%. <a href="http://messerschimdt.github.io/chartjs/">Link</a>
-
+                            An exploration of ChartJs, showing a chart of average income of the bottom 90%. Link
                         </div>
                     </div>
+                    </a>
+
                 </div>
             </div>
+
+
 
 
             <div class="flip-container">
                 <div class="flipper">
                     <div class="front"> Webscrapper </div>
+                    <a href="https://github.com/Messerschimdt/webscrape">
                     <div class="back">
-                        <div class="back-content">Nodejs webscrapper that pulls mutlple apis. Code Only. <a href="https://github.com/Messerschimdt/webscrape">link. </a></div>
+                        <div class="back-content">Nodejs webscrapper that pulls mutlple apis. Code Only. link. </div>
                     </div>
+                    </a>
 
                 </div>
             </div>
@@ -131,16 +155,20 @@
 
     </div>
 
-
-
-
-
+</div>
     <script src="bower_components/video.js/dist/video.js"></script>
     <script src="lib/videojs-Background.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
     <script>
-        // fire up the plugin
-        videojs('bg-video').Background();
+
+(function(){
+  videojs('bg-video').Background();
+
+
+
+
+})()
+
     </script>
 </body>
 
