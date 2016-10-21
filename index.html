@@ -4,13 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Hack and Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <link href="bower_components/video.js/dist/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1  user-scalable=no">
 
     <!--
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -22,39 +21,31 @@
 
 <body>
 
-
-
-    <div class="flex-center section ">
-        <div>
+    <div class="flex-center section1 fdc">
+      <video poster="./media/sea-pic.jpg" id="bgvid" playsinline autoplay muted loop>
+          <source src="media/sea-waves-SD.mp4" type="video/mp4">
+      </video>
             <div class="header">Hack and Design</div>
             <div class="subtitle">Where design and code make inspiring creations.</div>
-        </div>
     </div>
-    <video id="bg-video" class="video-js vjs-default-skin"  height="100%" width="100%"  loop="true">
-        <p>
-            Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
-        </p>
-        <source src="sea waves-SD.mp4" type="video/mp4">
-    </video>
 
 
 
-<div class="wrap">
-  <div class="title-wrap">
+
+
+<div class="wrap section2">
+  <div class="title-wrap ">
     <div class="title">Project List</div>
   </div>
     <div class="container tile-section ">
         <div class="flexwrapper">
-
-
             <div class="flip-container">
                 <div class="flipper">
                     <div class="front">
-                        <div class="front-title"> HTML Email
-                        </div>
+                        <div class="front-title">HTML Email
+    </div>
                     </div>
                     <a href="http://messerschimdt.github.io/html-email-mockup/">
-
                     <div class="back">
                         <div class="back-content">
                             Email mockup using <code>&lt;Table&gt;</code> elements.
@@ -79,9 +70,7 @@
             </div>
 
 
-
-
-            <div class="flip-container">
+            <div class="flip-container ">
                 <div class="flipper">
                     <div class="front">
                         <div class="front-title">
@@ -156,19 +145,8 @@
     </div>
 
 </div>
-    <script src="bower_components/video.js/dist/video.js"></script>
-    <script src="lib/videojs-Background.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
     <script>
-
-(function(){
-  videojs('bg-video').Background();
-
-
-
-
-})()
-
     </script>
 </body>
 
