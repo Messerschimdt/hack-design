@@ -51,6 +51,8 @@ video {
 
 .section1{
 height:750px;
+position: relative;
+overflow: hidden;
 }
 body {
     background-color: #ddd;
